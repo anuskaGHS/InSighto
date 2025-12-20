@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload Test</title>
+</head>
+<body>
+
+<h2>Upload CSV / Excel</h2>
+
+<input type="file" id="fileInput" />
+<br><br>
+<button id="uploadBtn" type="button">Upload</button>
+
+<pre id="result"></pre>
+
+<script>
+  document.getElementById("uploadBtn").addEventListener("click", async () => {
+    console.log("Upload button clicked");
+
+    const fileInput = document.getElementById("fileInput");
+    const file = fileInput.files[0];
+
+    if (!file) {
+      alert("Please select a file first");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/upload", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+      document.getElementById("result").textContent =
+        JSON.stringify(result, null, 2);
+
+      console.log("Response received", result);
+    } catch (err) {
+      console.error("Fetch error:", err);
+    }
+  });
+</script>
+
+</body>
+</html>
