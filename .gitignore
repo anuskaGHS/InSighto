@@ -9,3 +9,8 @@ __pycache__/
 
 # Database files
 *.db
+
+# Runtime / generated data
+storage/
+backend/uploads/
+backend/logs/

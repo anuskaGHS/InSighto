@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InSighto | Upload</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <nav>
+          <div>
+        <a href="../index.html" style="text-decoration:none; color:inherit;">
+            <strong>🧩 InSighto</strong>
+        </a>
+    </div>
+
+    <div>
+        <a href="upload.html" class="active">Upload</a>
+        <a href="overview.html">Overview</a>
+        <a href="analysis.html">Analysis</a>
+        <a href="report.html">Report</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div>
+        <a href="https://medium.com" target="_blank">Blog</a>
+    </div>
+    </nav>
+
+    <!-- Upload Page Content -->
+    <main>
+
+        <section>
+            <h2>📤 Upload Your Dataset</h2>
+            <p>CSV or Excel files. Clean or messy — I’ll handle it.</p>
+        </section>
+
+        <section>
+            <form>
+                <p>☁️⬆️</p>
+
+                <p>
+                    Drag & drop your file here<br>
+                    or<br>
+                    Browse from your computer
+                </p>
+
+                <input
+                    type="file"
+                    accept=".csv, .xlsx, .xls"
+                >
+
+                <br><br>
+
+                <small>
+                    Accepted formats: .csv, .xlsx, .xls
+                </small>
+
+                <br><br>
+
+                <button type="submit">
+                    Upload Dataset
+                </button>
+            </form>
+
+            <p>
+                <small>
+                    Your data is processed securely and temporarily.
+                    Nothing is stored after your session ends.
+                </small>
+            </p>
+        </section>
+
+    </main>
+    <!-- JavaScript Files -->
+    <script src="../js/state.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/upload.js"></script>
+
+</body>
+</html>
