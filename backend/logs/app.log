@@ -1,0 +1,318 @@
+[2025-12-19 21:03:26,363] INFO in app: Logging is set up
+[2025-12-19 21:03:55,438] INFO in app: Logging is set up
+[2025-12-19 21:03:55,875] INFO in app: Logging is set up
+[2025-12-19 21:04:02,240] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 21:04:30,493] INFO in app: Health check called
+[2025-12-19 21:04:30,768] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-12-19 21:08:43,774] INFO in app: Logging is set up
+[2025-12-19 21:09:11,007] INFO in app: Logging is set up
+[2025-12-19 21:09:11,408] INFO in app: Logging is set up
+[2025-12-19 21:09:15,588] WARNING in app: 404 - Route not found
+[2025-12-19 21:11:47,395] INFO in app: Logging is set up
+[2025-12-19 21:15:47,463] INFO in app: Logging is set up
+[2025-12-19 21:15:47,878] INFO in app: Logging is set up
+[2025-12-19 21:15:50,936] WARNING in app: 404 - Route not found
+[2025-12-19 21:16:57,122] WARNING in app: 404 - Route not found
+[2025-12-19 21:17:31,231] INFO in app: Overview requested for dataset ds_dummy_123
+[2025-12-19 21:22:13,589] INFO in app: Logging is set up
+[2025-12-19 21:22:14,589] INFO in app: Logging is set up
+[2025-12-19 21:22:22,805] WARNING in app: 404 - Route not found
+[2025-12-19 21:22:51,177] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 21:25:14,206] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\backend\app.py", line 64, in upload_file
+    filename, file_path = save_file(file, app.config["UPLOAD_FOLDER"])
+                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'UPLOAD_FOLDER'
+[2025-12-19 21:25:27,193] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\backend\app.py", line 64, in upload_file
+    filename, file_path = save_file(file, app.config["UPLOAD_FOLDER"])
+                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'UPLOAD_FOLDER'
+[2025-12-19 21:32:14,015] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\backend\app.py", line 64, in upload_file
+    filename, file_path = save_file(file, app.config["UPLOAD_FOLDER"])
+                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'UPLOAD_FOLDER'
+[2025-12-19 21:32:15,002] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\backend\app.py", line 64, in upload_file
+    filename, file_path = save_file(file, app.config["UPLOAD_FOLDER"])
+                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'UPLOAD_FOLDER'
+[2025-12-19 21:37:59,876] INFO in app: Logging is set up
+[2025-12-19 21:38:00,895] INFO in app: Logging is set up
+[2025-12-19 21:38:03,865] WARNING in app: 404 - Route not found
+[2025-12-19 21:39:36,771] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:44:00,275] INFO in app: Logging is set up
+[2025-12-19 21:44:01,155] INFO in app: Logging is set up
+[2025-12-19 21:44:04,356] WARNING in app: 404 - Route not found
+[2025-12-19 21:44:26,921] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:44:26,997] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\backend\app.py", line 83, in upload_file
+    return success_response(
+           ^^^^^^^^^^^^^^^^^
+TypeError: success_response() got an unexpected keyword argument 'preview_rows'
+[2025-12-19 21:48:14,605] INFO in app: Logging is set up
+[2025-12-19 21:48:32,090] INFO in app: Logging is set up
+[2025-12-19 21:48:32,996] INFO in app: Logging is set up
+[2025-12-19 21:48:35,922] WARNING in app: 404 - Route not found
+[2025-12-19 21:48:47,835] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:48:49,142] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:49:28,981] WARNING in app: 404 - Route not found
+[2025-12-19 21:49:53,033] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 21:51:09,302] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:51:11,263] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:51:52,216] INFO in app: Logging is set up
+[2025-12-19 21:51:53,527] INFO in app: Logging is set up
+[2025-12-19 21:51:55,956] WARNING in app: 404 - Route not found
+[2025-12-19 21:52:11,831] WARNING in app: 404 - Route not found
+[2025-12-19 21:52:23,423] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 21:56:01,646] INFO in app: Logging is set up
+[2025-12-19 21:56:02,689] INFO in app: Logging is set up
+[2025-12-19 21:56:17,507] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 21:56:29,075] INFO in app: File saved: Amazon_Store_Sales_Data.xlsx_-_Sheet1_1.csv
+[2025-12-19 21:56:29,522] INFO in app: File saved: Amazon_Store_Sales_Data.xlsx_-_Sheet1_1.csv
+[2025-12-19 21:56:30,063] INFO in app: File saved: Amazon_Store_Sales_Data.xlsx_-_Sheet1_1.csv
+[2025-12-19 22:45:44,311] INFO in app: Logging is set up
+[2025-12-19 22:45:45,787] INFO in app: Logging is set up
+[2025-12-19 22:45:49,475] WARNING in app: 404 - Route not found
+[2025-12-19 22:46:16,561] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 22:47:20,744] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 22:47:29,460] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-19 22:50:56,414] INFO in app: File saved: Ecommerce_Delivery_Analytics_New.csv
+[2025-12-19 23:00:10,429] INFO in app: Logging is set up
+[2025-12-19 23:00:12,088] INFO in app: Logging is set up
+[2025-12-19 23:49:27,412] INFO in app: Logging is set up
+[2025-12-19 23:49:27,412] INFO in app: Logging is set up
+[2025-12-19 23:50:04,746] INFO in app: Logging is set up
+[2025-12-19 23:50:04,746] INFO in app: Logging is set up
+[2025-12-19 23:51:33,327] INFO in app: Logging is set up
+[2025-12-19 23:51:33,327] INFO in app: Logging is set up
+[2025-12-19 23:52:34,676] INFO in app: Logging is set up
+[2025-12-19 23:52:35,948] INFO in app: Logging is set up
+[2025-12-19 23:53:16,027] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 23:53:23,893] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 23:53:27,354] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 23:53:37,159] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 23:53:57,378] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-19 23:54:12,392] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:18,180] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:18,498] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:18,983] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:19,149] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:19,244] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:19,318] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:19,483] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:19,649] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:54:39,038] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-19 23:55:19,123] INFO in app: File saved: sample_ecommerce_three_level_header.xlsx
+[2025-12-20 00:00:13,939] INFO in app: Logging is set up
+[2025-12-20 00:00:14,930] INFO in app: Logging is set up
+[2025-12-20 00:00:29,849] INFO in app: Logging is set up
+[2025-12-20 00:00:31,748] INFO in app: Logging is set up
+[2025-12-20 00:00:59,238] INFO in app: File saved: zomato-schema_-_order_details.csv
+[2025-12-20 00:01:11,419] INFO in app: File saved: Titanic-Dataset.csv
+[2025-12-20 00:27:55,653] INFO in app: Logging is set up
+[2025-12-20 00:27:55,653] INFO in app: Logging is set up
+[2025-12-20 00:30:28,754] INFO in app: Logging is set up
+[2025-12-20 00:30:28,768] INFO in app: Logging is set up
+[2025-12-20 00:30:59,049] INFO in app: Logging is set up
+[2025-12-20 00:30:59,852] INFO in app: Logging is set up
+[2025-12-20 00:31:51,801] WARNING in app: 404 - Route not found
+[2025-12-20 00:40:07,959] INFO in app: File saved: sample_ecommerce_multi_header.xlsx
+[2025-12-20 00:49:48,020] INFO in app: Overview requested for dataset ds_dummy_123
+[2025-12-20 01:06:29,966] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-20 01:06:38,643] ERROR in app: Unhandled exception occurred
+Traceback (most recent call last):
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\likitha\InSighto\venv\Lib\site-packages\werkzeug\routing\map.py", line 624, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2025-12-20 13:46:46,960] INFO in app: Logging is set up
+[2025-12-20 13:46:48,450] INFO in app: Logging is set up
+[2025-12-20 13:46:52,636] WARNING in app: 404 - Route not found
+[2025-12-20 13:46:52,958] WARNING in app: 404 - Route not found
+[2025-12-20 13:47:28,159] WARNING in app: 404 - Route not found
+[2025-12-20 13:47:28,458] WARNING in app: 404 - Route not found
+[2025-12-20 13:56:15,071] WARNING in app: 404 - Route not found
+[2025-12-20 13:56:18,149] WARNING in app: 404 - Route not found
+[2025-12-20 13:57:52,453] WARNING in app: 404 - Route not found
